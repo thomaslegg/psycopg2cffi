@@ -213,9 +213,13 @@ libpq = ffi.verify('''
         libraries=['pq'],
         library_dirs=[
             '/usr/pgsql-9.1/lib/',
+            #FreeBSD, etc.
+            '/usr/local/lib',
             ],
         include_dirs=[
-            '/usr/include/postgresql/', 
+            '/usr/include/postgresql/',
+            #FreeBSD, etc.
+            '/usr/local/include',
             '/usr/pgsql-9.1/include/',
             ],
         ext_package='psycopg2cffi')
