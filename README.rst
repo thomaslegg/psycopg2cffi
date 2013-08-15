@@ -10,7 +10,8 @@ Or from source::
     python setup.py develop
 
 Installation requirements are the same as for ``psycopg2`` - you must
-have ``libpq`` headers, ``pg_config`` somewhere on your ``$PATH``.
+have ``libpq`` headers and ``libpq.so`` installed. Search paths for these are set
+in ``_impl/libpq.py``
 Installation was tested on Ubuntu 12.04 and CentOS (RHEL 5.0).
 It should be possible to make it work on Windows, but I did not even test it.
 
