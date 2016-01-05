@@ -1,3 +1,6 @@
+This fork is deprecated. Testing psycopg2cffi shows that it now builds and installs via pip without modification on FreeBSD 10.
+___________________________
+
 An implementation of the psycopg2 module using cffi.
 The module is currently compatible with Psycopg 2.5.
 
